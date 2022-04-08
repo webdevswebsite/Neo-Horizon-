@@ -1,0 +1,69 @@
+/* Responsive CSS */
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+
+    .vibrate-animate{
+    	bottom: 50px;
+    }
+
+    .hero-content {
+    padding-top: 200px;
+    padding-bottom: 220px;
+	}
+
+	
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+	
+	.mainmenu {
+	    display: none;
+	}
+
+	.menu-trigger {
+	    display: block;
+	    opacity: 1;
+	}
+
+	.hero-content {
+	    padding: 130px 0;
+	    text-align: center;
+	}
+
+}
+/* Tablet & Mobile Layout: 767px. */
+@media only screen and (max-width: 767px) { 
+
+    .mainmenu {
+    display: none;
+	}
+
+	.menu-trigger {
+	    display: block;
+	    opacity: 1;
+	}
+
+	.hero-content {
+	    padding-top: 100px;
+	    padding-bottom: 120px;
+	    text-align: center;
+	}
+
+	.hero-content h1 {
+	    font-size: 30px;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+ 
+	.mainmenu {
+    display: none;
+	}
+
+	.menu-trigger {
+	    display: block;
+	    opacity: 1;
+	}
+}

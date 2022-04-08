@@ -1,0 +1,564 @@
+/*
+    Template Name: appsNet
+    Author: 
+    Author URI: 
+    Description: 
+    Version: 1.0
+*/
+
+
+/* Table of Content
+==================================================
+*   01.  Body 
+*   02.  preloaders
+*   03.  header area
+*   04 . hero area
+*   05 . about area
+*   06 . feature area
+*   07 . screnshot area
+*   08 . pricing area
+*   09 . video area
+*   10 . testimonial area
+*   11 . download area
+*   12 . Contact area
+*   13 . footer area
+*   14 . back to top
+*/
+/*========================================
+    1.General Styles
+=========================================*/
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none!important;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+    color:#787878;
+}
+
+
+a:hover,
+a:focus,
+a:active {
+    color: inherit;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Common css */
+
+input:focus, text-aria:focus, button:focus, a:focus, select:focus;textarea:focus{
+    outline:none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+input[type="text"],input[type="tel"],input[type="email"],input[type="number"],input[type="date"],textarea,select {
+    border:  1px solid #ced4da;
+}
+
+.fullwide input,
+.fullwide select,
+.fullwide textarea,
+button.fullwide{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.d-table{
+    width: 100%;
+    height: 100%;
+}
+
+.d-table-cell{
+    vertical-align: middle;
+}
+
+/* heading css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+ {
+    font-weight: 700;
+    color:#2c3e50;
+}
+/*==========================================
+    end general styles
+==========================================*/
+
+/*==========================================
+    2.preloader sart
+==========================================*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: #222222;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #30C032;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #8f6ed5;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #2394F2;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/*==========================================
+    end preloader
+==========================================*/
+
+
+/*=====================
+    03.header area css start
+==========================*/
+
+.header-area {
+    padding: 30px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.logo-area a {
+    display: inline-block;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.mainmenu li {
+    display: inline-block;
+}
+
+.mainmenu li a {
+    display: block;
+    color: #b8dfff;
+    margin-left: 20px;
+    margin-top: 3px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.mainmenu li a:hover,.mainmenu #nav .current a{
+    color:#fff;
+}
+
+
+.sticky-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+.is-sticky .header-area {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 0px 15px #c7c7c7;
+}
+
+.is-sticky .logo-area a {
+    color:#2c3e50;
+}
+
+.is-sticky .mainmenu li a {
+    color: #2c3e50;
+}
+
+.is-sticky .mainmenu #nav .current a:hover, .is-sticky  .mainmenu #nav .current a {
+    color:#2394F2;
+}
+
+.offcanvas-menu {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    display: block;
+    z-index: 9999;
+    background: #2394F2;
+    padding: 30px;
+    margin-left: -300px;
+     -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.offcanvas-menu li a {
+    display: block;
+    color: #b8dfff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #5eacec;
+    padding: 3px 0;
+    font-weight: 700;
+     -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.offcanvas-menu li a:hover,.offcanvas-menu li.current a{
+    color: #fff;
+    border-bottom: 1px solid #e4f3ff;
+}
+
+.offcanvas-menu li {
+    display: block;
+}
+
+span.menu-close {
+    display: block;
+    text-align: right;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+span.menu-close i {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+     -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+span.menu-close i:hover{
+    color: #b8dfff;
+    border-color: #b8dfff;
+}
+
+.off-canvas-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    opacity: 0;
+     -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    visibility: hidden;
+}
+
+.menu-trigger {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 11px 0 5px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    display: none;
+    opacity: 0;
+    bottom: -5px;
+    font-size: 22px;
+}
+
+.is-sticky .menu-trigger {
+    color:#2C3E50;
+}
+
+.offcanvas-menu.active {
+    margin-left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+.off-canvas-overlay.active {
+    opacity: .6;
+    z-index: 9991;
+    visibility: visible;
+}
+/*=====================
+    end header area css 
+==========================*/
+
+/*=====================
+    04.hero area css start
+==========================*/
+
+.header-area .row .col-lg-9 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero-area {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    background:#262060;
+    background-attachment: fixed;
+}
+
+.hero-area::after {
+    background-image: linear-gradient(
+85deg
+, rgba(26, 44, 121, 0.8), rgba(94, 170, 50, 0.9));
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.hero-content {
+    color: #eaf6ff;
+    font-size: 18px;
+    padding-top: 170px;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 9;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+
+/*=====================
+    end hero area css 
+==========================*/
+/*=====================
+    start intro area css 
+==========================*/
+.intro-area {
+    padding: 50px 0;
+}
+
+section{
+    padding: 25px 0;
+}
+
+ul.source-list li {
+    list-style: outside;
+}
+
+ul.feature-list li i {
+    margin-right: 10px;
+    text-align: center;
+    color: #00B22D;
+}
+
+ul.feature-list li {
+    margin-left: 15px;
+}
+
+ul.feature-list {
+    margin-top: 15px;
+}
+
+section h4 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+ul.source li {
+    list-style: disc;
+}
+
+section h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+/*=====================
+    end intro area css 
+==========================*/
+/*=====================
+    13.footer area css start
+==========================*/
+.footer-area-wrapper {
+    position: relative;
+    z-index: 1;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background:#1F2E72;
+    background-attachment: fixed;
+}
+
+.single-footer-item p {
+    margin: 0;
+    color: #fff;
+    margin-top: 7px;
+}
+
+.single-footer-item a {
+    margin-left: 5px;
+    color: #95c9f5;
+    font-style: italic;
+}
+
+.footer-social li {
+    display: inline-block;
+}
+
+.copy-right-area {
+    padding: 30px 0;
+}
+
+.footer-social li a {
+    display: block;
+    margin-left: 15px;
+    color: #95c9f5;
+    border: 1px dashed #95c9f5;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.footer-social li a:hover {
+    color: #fff;
+    border: 1px dashed #fff;
+}
+
+/*=====================
+    end footer area css
+==========================*/
+
+/*=====================
+    14.back to top css start
+==========================*/
+
+div#scroll {
+    bottom: 25px;
+    display: none;
+    position: fixed;
+    right: 25px;
+    z-index: 999;
+}
+
+#scroll a {
+    display: inline-block;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+}
+
+#scroll a i {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    background: #2c3e50;
+    border-radius: 50%;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*=====================
+    end back to top css
+==========================*/
